@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
-import { Octicons } from '@expo/vector-icons';
+import { Octicons } from "@expo/vector-icons";
 
 export const Container = styled.View`
   flex: 1;
@@ -10,23 +10,19 @@ export const Container = styled.View`
   max-height: ${RFPercentage(26)}px;
 `;
 
-export const Emoji = styled.Image`
+export const Emoji = styled.Image``;
 
-`
-
-export const GreetingText = styled.Text`
-
-`
+export const GreetingText = styled.Text``;
 
 export const Greeting = styled.Text`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-`
+`;
 
 export const Head = styled.View`
   width: 100%;
-`
+`;
 
 export const UserInfo = styled.View`
   flex-direction: row;
