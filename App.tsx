@@ -4,6 +4,7 @@ import * as SplashScreen from "expo-splash-screen";
 import theme from "./src/global/Styles/theme";
 import { Splash } from "./src/Screens/Splash";
 import { SignIn } from "./src/Screens/SignIn";
+import { Home } from "./src/Screens/Home";
 import {
   useFonts,
   DMSerifDisplay_400Regular,
@@ -33,7 +34,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <SignIn />
+      <Home />
     </ThemeProvider>
   );
 }
