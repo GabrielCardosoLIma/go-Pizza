@@ -1,4 +1,5 @@
 import React from "react";
+import { Card } from "../../Components/Card";
 import { Header } from "../../Components/Header";
 import {
   Container,
@@ -13,8 +14,12 @@ import {
   MenuTitleArea,
   TitleMenu,
   CounterPizzaMenu,
-  Separator
+  Separator,
+  ListPizzas,
 } from "./Styles";
+
+import { data } from "../../Utils/flavorPizzas";
+import { View } from "react-native";
 
 export function Home() {
   return (
@@ -28,7 +33,7 @@ export function Home() {
           </InputAreaCloseButton>
         </InputSearch>
         <InputAreaSearchButton>
-            <IconSearch name="search" />
+          <IconSearch name="search" />
         </InputAreaSearchButton>
       </InputArea>
       <Menu>
@@ -38,6 +43,12 @@ export function Home() {
         </MenuTitleArea>
         <Separator></Separator>
       </Menu>
+      <ListPizzas
+        data={data}
+        horizontal={false}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => <Card data={item} />}
+      />
     </Container>
   );
 }

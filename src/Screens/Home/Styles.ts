@@ -76,5 +76,10 @@ export const CounterPizzaMenu = styled.Text`
 export const Separator = styled.View`
   height: 1px;
   background-color: ${({ theme }) => theme.COLORS.SHAPE};
-  margin-top: 20px;
+  margin: 20px 0;
+`;
+
+export const ListPizzas = styled.FlatList`
+  flex: 1;
+  padding: 0 24px;
 `;

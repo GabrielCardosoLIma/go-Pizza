@@ -7,7 +7,7 @@ export const Container = styled.View`
   background-color: ${({ theme }) => theme.COLORS.PRIMARY_900};
   justify-content: space-between;
   align-items: center;
-  max-height: ${RFPercentage(26)}px;
+  max-height: ${RFPercentage(22)}px;
 `;
 
 export const Emoji = styled.Image``;
