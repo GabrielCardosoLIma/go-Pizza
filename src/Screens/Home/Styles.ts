@@ -1,6 +1,7 @@
 import styled from "styled-components/native";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import { Ionicons } from "@expo/vector-icons";
+import { TextInput } from "react-native";
 
 export const Container = styled.View`
   flex: 1;
@@ -23,10 +24,6 @@ export const InputSearch = styled.View`
   height: 48px;
   background-color: ${({ theme }) => theme.COLORS.TITLE};
   border-radius: 16px;
-`;
-
-export const InputText = styled.TextInput`
-  padding: 15px 6px;
 `;
 
 export const IconClose = styled(Ionicons)`
@@ -88,4 +85,10 @@ export const SeparatorMenu = styled.View`
   width: 200px;
   height: 1px;
   background-color: ${({ theme }) => theme.COLORS.SHAPE};
-`
+`;
+
+export const InputText = styled(TextInput).attrs(({ theme }) => ({
+  placeholderTextColor: theme.COLORS.TITLE,
+}))`
+  padding: 15px 6px;
+`;

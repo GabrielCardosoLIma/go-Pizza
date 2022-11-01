@@ -29,7 +29,7 @@ export function Home() {
       <Header />
       <InputArea>
         <InputSearch>
-          <InputText placeholder="" />
+          <InputText placeholder="Pesquise o sabor da sua pizza" />
           <InputAreaCloseButton>
             <IconClose name="close" />
           </InputAreaCloseButton>

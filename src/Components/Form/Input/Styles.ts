@@ -9,7 +9,6 @@ export const Container = styled(TextInput).attrs(({ theme }) => ({
   font-size: ${RFValue(14)}px;
   color: ${({ theme }) => theme.COLORS.TITLE};
   font-family: ${({ theme }) => theme.FONTS.TEXT};
-  background-color: ${({ theme }) => theme.COLORS.PRIMARY_900};
   border-color: ${({ theme }) => theme.COLORS.PRIMARY_100};
   border-width: 1px;
   border-radius: 12px;

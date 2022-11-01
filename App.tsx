@@ -34,7 +34,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Splash />
+      <Home />
     </ThemeProvider>
   );
 }
