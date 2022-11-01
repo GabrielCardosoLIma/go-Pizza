@@ -2,7 +2,7 @@ export const data = [
     {
       id: "1",
       title: "Margherita",
-      description: "Mussarela, manjericão fresco,parmesão e tomate.",
+      description: "Mussarela, manjericão fresco, parmesão e tomate.",
       image: require("../assets/img/margherita.png"),
     },
     {

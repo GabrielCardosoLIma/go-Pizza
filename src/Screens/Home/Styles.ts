@@ -83,3 +83,9 @@ export const ListPizzas = styled.FlatList`
   flex: 1;
   padding: 0 24px;
 `;
+
+export const SeparatorMenu = styled.View`
+  width: 200px;
+  height: 1px;
+  background-color: ${({ theme }) => theme.COLORS.SHAPE};
+`

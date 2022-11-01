@@ -23,7 +23,6 @@ export const ImagePizza = styled.Image``
 export const RecoveryPassword = styled.TouchableOpacity`
   align-items: flex-end;
   margin-top: 4px;
-  margin-bottom: 23px;
 `;
 
 export const RecoveryPasswordText = styled.Text`

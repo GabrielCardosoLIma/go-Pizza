@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import { AntDesign } from "@expo/vector-icons";
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
   width: 100%;
   flex-direction: row;
   align-items: center;
@@ -44,3 +44,10 @@ export const Description = styled.Text`
 export const AreaIconButton = styled.TouchableOpacity`
 
 `;
+
+export const Separator = styled.View`
+  width: 100%;
+  height: 1px;
+  margin: 14px 0;
+  background-color: ${({ theme }) => theme.COLORS.SHAPE};
+`

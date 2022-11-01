@@ -1,6 +1,10 @@
 import React from "react";
+
 import { Card } from "../../Components/Card";
 import { Header } from "../../Components/Header";
+import { data } from "../../Utils/flavorPizzas";
+import { TabsBar } from "../../Components/TabsBar";
+
 import {
   Container,
   InputArea,
@@ -16,10 +20,8 @@ import {
   CounterPizzaMenu,
   Separator,
   ListPizzas,
+  SeparatorMenu,
 } from "./Styles";
-
-import { data } from "../../Utils/flavorPizzas";
-import { View } from "react-native";
 
 export function Home() {
   return (
@@ -27,7 +29,7 @@ export function Home() {
       <Header />
       <InputArea>
         <InputSearch>
-          <InputText />
+          <InputText placeholder="" />
           <InputAreaCloseButton>
             <IconClose name="close" />
           </InputAreaCloseButton>
@@ -49,6 +51,7 @@ export function Home() {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <Card data={item} />}
       />
+      <TabsBar />
     </Container>
   );
 }

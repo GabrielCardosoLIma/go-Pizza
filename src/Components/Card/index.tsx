@@ -9,9 +9,18 @@ import {
   Icon,
   Description,
   AreaIconButton,
+  Separator
 } from "./Styles";
+interface Props {
+  image: string;
+  title: string;
+  description: string;
+}
+interface CardProps {
+  data: Props
+}
 
-export function Card({data}) {
+export function Card({data} : CardProps) {
   return (
     <Container>
       <AreaImage>
@@ -27,6 +36,7 @@ export function Card({data}) {
         <Description>
           {data.description}
         </Description>
+        <Separator></Separator>
       </AreaDescription>
     </Container>
   );
