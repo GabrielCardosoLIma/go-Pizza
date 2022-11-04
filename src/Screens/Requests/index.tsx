@@ -5,7 +5,6 @@ import {
   Text,
   View
 } from "./Styles";
-import { Pizzas } from '../../Components/Pizzas'
 
 export function Requests() {
   return (
@@ -14,7 +13,6 @@ export function Requests() {
         <Text>Pedidos Feitos</Text>
       </Header>
       <View>
-      <Pizzas/>
       </View>
     </Container>
   );

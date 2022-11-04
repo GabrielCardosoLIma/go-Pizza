@@ -1,30 +1,24 @@
-import styled from "styled-components/native";
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import styled from 'styled-components/native'
+import { Feather } from '@expo/vector-icons';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
-  padding: 20px 21px;
-  font-size: ${RFValue(14)}px;
-  color: ${({ theme }) => theme.COLORS.TITLE};
-  font-family: ${({ theme }) => theme.FONTS.TEXT};
-  background-color: ${({ theme }) => theme.COLORS.PRIMARY_900};
-  border-color: ${({ theme }) => theme.COLORS.PRIMARY_100};
-  border-width: 1px;
-  border-radius: 12px;
-  margin-bottom: 16px;
+    background-color: ${ ({ theme }) => theme.colors.shape};
+    border-radius:5px;
+    padding: 17px 24px;
+    margin-bottom: 18px;
+`;
+export const Title = styled.Text`
+    font-family: ${ ({ theme}) => theme.fonts.regular};
+    font-size: ${RFValue(14)}px;
 `;
 
-export const Text = styled.Text`
-
+export const Status = styled.Text`
+    font-family: ${ ({ theme}) => theme.fonts.regular};
+    font-size: ${RFValue(20)}px;
+    margin-top: 2px;
 `;
 
-export const Description = styled.Text`
+export const Description = styled.Text``;
 
-`;
-
-export const Indicator = styled.View`
-
-`;
-
-export const ImagePizza = styled.View`
-
-`;
+export const Image = styled.View``;
