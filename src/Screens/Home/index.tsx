@@ -20,7 +20,6 @@ import {
   CounterPizzaMenu,
   Separator,
   ListPizzas,
-  SeparatorMenu,
 } from "./Styles";
 
 export function Home() {

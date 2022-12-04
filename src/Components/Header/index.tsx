@@ -11,7 +11,12 @@ import {
   IconAreaButton
 } from "./Styles";
 
+import { useNavigation } from "@react-navigation/native";
+
 export function Header() {
+
+  const navigation = useNavigation();
+
   return (
     <Container>
       <Head>
@@ -22,7 +27,7 @@ export function Header() {
               <UserGreething>Olá, Garçom</UserGreething>
             </User>
           </UserInfo>
-          <IconAreaButton>
+          <IconAreaButton onPress={() => navigation.navigate("SignIn")}>
             <Icon name="sign-out" />
           </IconAreaButton>
         </UserWrapper>

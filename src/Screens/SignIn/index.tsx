@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../../Components/Form/Button";
 import { Input } from "../../Components/Form/Input";
+import { useNavigation } from "@react-navigation/native";
 import {
   Container,
   Form,
@@ -11,6 +12,9 @@ import {
 } from "./Styles";
 
 export function SignIn() {
+
+  const navigation = useNavigation();
+
   return (
     <Container>
       <Form>
@@ -22,7 +26,7 @@ export function SignIn() {
           <RecoveryPasswordText>Esqueci minha senha</RecoveryPasswordText>
         </RecoveryPassword>
       </Form>
-      <Button title="Entrar" />
+      <Button title="Entrar" onPress={() => navigation.navigate("Home")}/>
     </Container>
   );
 }
