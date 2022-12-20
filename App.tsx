@@ -34,9 +34,9 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Splash/>
+      {/* <Splash/> */}
       {/* <SignIn /> */}
-      {/* <Requests/> */}
+      <Requests/>
     </ThemeProvider>
   );
 }
