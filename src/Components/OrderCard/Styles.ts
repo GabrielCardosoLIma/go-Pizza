@@ -44,50 +44,27 @@ export const Description = styled.Text`
 `;
 
 export const StatusContainer = styled.View<TypeProps>`
-  width: 50%;
+  padding: 4px 16px;
+  border-radius: 12px;
+  margin-top: 16px;
   align-items: center;
   justify-content: center;
-  /* background-color: ${({theme}) => theme.COLORS.SUCCESS_900};
-    ${({ type }) => type === "Pronto" && css`
-    color: ${({theme}) => theme.COLORS.SUCCESS_900};
-    `}
-    ${({ type }) => type === "Preparando" && css`
-    color: ${({theme}) => theme.COLORS.ALERT_900};
-    `}
-    ${({ type }) => type === "Entregue" && css`
-    color: ${({theme}) => theme.COLORS.SECONDARY_900};
-    `} */
+
+  background-color: 
+  ${({theme, type}) => type === "Pronto" ? theme.COLORS.SECONDARY_900 : theme.COLORS.SUCCESS_900};
+  ${({theme, type}) => type === "Preparando" ? theme.COLORS.SECONDARY_900 : theme.COLORS.ALERT_900};
+  ${({theme, type}) => type === "Entregue" ? theme.COLORS.SECONDARY_900 : theme.COLORS.SUCCESS_900};
+
 `;
 
 export const ContainerText = styled.Text<TypeProps>`
-  width: 100%;
-  /* background-color: 
-  ${({theme}) => theme.COLORS.SUCCESS_900};
-    ${({ type }) => type === "Pronto" && css`
-    color: ${({theme}) => theme.COLORS.SUCCESS_900};
-    `}
-    ${({ type }) => type === "Preparando" && css`
-    color: ${({theme}) => theme.COLORS.ALERT_900};
-    `}
-    ${({ type }) => type === "Entregue" && css`
-    color: ${({theme}) => theme.COLORS.SECONDARY_900};
-    `} */
-
-  background-color: 
-  ${({theme, type}) => type === "Pronto" && css`
-  color: ${({theme}) => theme.COLORS.SUCCESS_900};
-  `};
-  ${({theme, type}) => type === "Preparando" && css`
-  color: ${({theme}) => theme.COLORS.ALERT_900};
-  `};
-  ${({theme, type}) => type === "Entregue" && css`
-  color: ${({theme}) => theme.COLORS.SECONDARY_900};
-  `};
-
-  border-radius: 12px;
-  padding: 4px 16px;
-  color: ${({theme}) => theme.COLORS.TITLE};
   font-size: 12px;
+  font-family: ${({theme}) => theme.FONTS.TEXT};
+  color: ${({theme}) => theme.COLORS.TITLE};
+
+  ${({ type, theme }) => css`
+    color: ${type === 'Preparando' ? theme.COLORS.ALERT_900 : theme.COLORS.TITLE};
+  `};
 `;
 
 export const Separator = styled.View`
